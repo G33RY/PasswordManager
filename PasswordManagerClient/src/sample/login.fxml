@@ -1,0 +1,53 @@
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javax.print.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<GridPane fx:controller="sample.LoginController" xmlns:fx="http://javafx.com/fxml" alignment="top_left" hgap="0" vgap="0">
+    <columnConstraints>
+        <ColumnConstraints prefWidth="200" minWidth="200" maxWidth="200"></ColumnConstraints>
+        <ColumnConstraints prefWidth="600" minWidth="600" maxWidth="600"></ColumnConstraints>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="100"></RowConstraints>
+    </rowConstraints>
+    <VBox fx:id="list" GridPane.columnIndex="0" GridPane.rowIndex="0">
+
+    </VBox>
+    <VBox fx:id="main" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <GridPane fx:id="form">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="100"></ColumnConstraints>
+            </columnConstraints>
+            <VBox fx:id="formTitleBox" GridPane.rowIndex="0" GridPane.columnIndex="0">
+                <Label>
+                    LOGIN
+                </Label>
+            </VBox>
+            <VBox fx:id="errorBox" GridPane.rowIndex="1" GridPane.columnIndex="0">
+                <Label fx:id="errors">
+                </Label>
+            </VBox>
+            <VBox styleClass="inputLabel" GridPane.rowIndex="2" GridPane.columnIndex="0">
+                <Label>USERNAME</Label>
+            </VBox>
+            <VBox styleClass="input" GridPane.rowIndex="3" GridPane.columnIndex="0">
+                <TextField fx:id="username" text="admin" />
+            </VBox>
+            <VBox styleClass="inputLabel" GridPane.rowIndex="4" GridPane.columnIndex="0">
+                <Label>PASSWORD</Label>
+            </VBox>
+            <VBox styleClass="input" GridPane.rowIndex="5" GridPane.columnIndex="0">
+                <PasswordField fx:id="password" text="admin" />
+            </VBox>
+            <VBox styleClass="button" GridPane.rowIndex="6" GridPane.columnIndex="0">
+                <Button fx:id="loginBtn" defaultButton="true" onAction="#login">LOGIN</Button>
+            </VBox>
+        </GridPane>
+    </VBox>
+    <stylesheets>
+        <URL value="@login.css"/>
+    </stylesheets>
+</GridPane>

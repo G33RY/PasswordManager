@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<?import javafx.scene.shape.Box?>
+<GridPane fx:controller="sample.MainController" xmlns:fx="http://javafx.com/fxml" alignment="top_left" hgap="0" vgap="0">
+    <columnConstraints>
+        <ColumnConstraints prefWidth="270" minWidth="270" maxWidth="270"></ColumnConstraints>
+        <ColumnConstraints prefWidth="550" minWidth="550" maxWidth="550"></ColumnConstraints>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints prefHeight="50" maxHeight="50" minHeight="50"></RowConstraints>
+        <RowConstraints prefHeight="650" maxHeight="650" minHeight="650"></RowConstraints>
+    </rowConstraints>
+    <GridPane fx:id="header" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <columnConstraints>
+            <ColumnConstraints prefWidth="270" minWidth="270" maxWidth="270"></ColumnConstraints>
+            <ColumnConstraints prefWidth="300" minWidth="300" maxWidth="300"></ColumnConstraints>
+            <ColumnConstraints prefWidth="250" minWidth="250" maxWidth="250"></ColumnConstraints>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints prefHeight="50" maxHeight="50" minHeight="50"></RowConstraints>
+        </rowConstraints>
+        <HBox fx:id="searchBox" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <TextField fx:id="search" promptText="Search..."></TextField>
+            <Button fx:id="searchBtn"></Button>
+        </HBox>
+        <HBox fx:id="addBtnBox" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <Button fx:id="refreshBtn">
+            </Button>
+            <Button fx:id="addBtn" >
+                Add +
+            </Button>
+        </HBox>
+        <HBox fx:id="nameBox" GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <Label fx:id="name" text="asd" />
+        </HBox>
+    </GridPane>
+    <ScrollPane fx:id="listScrollPane" fitToHeight="" fitToWidth="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <VBox fx:id="list" >
+
+        </VBox>
+    </ScrollPane>
+    <VBox fx:id="main" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <VBox fx:id="titleBox">
+            <Label fx:id="image">
+            </Label>
+            <Label fx:id="label">
+            </Label>
+        </VBox>
+        <GridPane fx:id="editBox">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="100"></ColumnConstraints>
+            </columnConstraints>
+
+            <!-- TITLE -->
+            <VBox styleClass="inputBox" GridPane.rowIndex="0" GridPane.columnIndex="0">
+                <HBox styleClass="inputLabel">
+                    <Label>TITLE</Label>
+                </HBox>
+                <HBox styleClass="input">
+                    <TextField fx:id="title" />
+                </HBox>
+            </VBox>
+
+            <!-- IMAGE -->
+            <VBox styleClass="inputBox" GridPane.rowIndex="1" GridPane.columnIndex="0">
+                <HBox styleClass="inputLabel">
+                    <Label>IMAGE URL</Label>
+                </HBox>
+                <HBox styleClass="input">
+                    <TextField fx:id="imageUrl" />
+                </HBox>
+            </VBox>
+
+            <!-- URL -->
+            <VBox styleClass="inputBox" GridPane.rowIndex="2" GridPane.columnIndex="0">
+                <HBox styleClass="inputLabel">
+                    <Label>URL</Label>
+                </HBox>
+                <HBox styleClass="input">
+                    <TextField fx:id="url" />
+                </HBox>
+            </VBox>
+
+            <!-- USERNAME -->
+            <VBox styleClass="inputBox" GridPane.rowIndex="3" GridPane.columnIndex="0">
+                <HBox styleClass="inputLabel">
+                    <Label>USERNAME</Label>
+                </HBox>
+                <HBox styleClass="input">
+                    <TextField fx:id="AccUsername" />
+                </HBox>
+            </VBox>
+
+            <!-- EMAIL -->
+            <VBox styleClass="inputBox" GridPane.rowIndex="4" GridPane.columnIndex="0">
+                <HBox styleClass="inputLabel">
+                    <Label>EMAIL</Label>
+                </HBox>
+                <HBox styleClass="input">
+                    <TextField fx:id="AccEmail" />
+                </HBox>
+            </VBox>
+
+            <!-- PASSWORD -->
+            <VBox styleClass="inputBox" GridPane.rowIndex="5" GridPane.columnIndex="0">
+                <HBox styleClass="inputLabel">
+                    <Label>PASSWORD</Label>
+                </HBox>
+                <HBox styleClass="input">
+                    <PasswordField fx:id="AccPassword"/>
+                </HBox>
+            </VBox>
+
+            <HBox styleClass="button" GridPane.rowIndex="6" GridPane.columnIndex="0">
+                <Button fx:id="deleteBtn">DELETE</Button>
+                <Button fx:id="saveBtn" defaultButton="true">SAVE</Button>
+            </HBox>
+        </GridPane>
+    </VBox>
+    <stylesheets>
+        <URL value="@main.css"/>
+    </stylesheets>
+</GridPane>

@@ -1,0 +1,86 @@
+#list{
+    -fx-background-color: #2DA8D8;
+}
+
+#main{
+    -fx-background-color: #d9514e;
+    -fx-alignment: center;
+}
+
+#form{
+    -fx-background-radius: 35px;
+    -fx-background-color: #2A2B2D;
+    -fx-pref-width: 300px;
+    -fx-min-width: 300px;
+    -fx-max-width: 300px;
+}
+
+#formTitleBox{
+    -fx-alignment: center;
+    -fx-pref-height: 70px;
+    -fx-padding: 30px 0px 0px 0px;
+}
+
+#formTitleBox Label{
+    -fx-text-fill: #fff;
+    -fx-font-size: 30px;
+    -fx-font-weight: 800;
+}
+
+#errorBox{
+    -fx-alignment: center;
+}
+
+#errorBox Label{
+    -fx-text-fill: #d9514e;
+    -fx-font-size: 15px;
+}
+
+.inputLabel{
+    -fx-alignment: bottom-left;
+    -fx-padding: 0px 0px 0px 20px;
+}
+
+.inputLabel Label{
+    -fx-text-fill: #fff;
+    -fx-font-size: 20;
+}
+
+.input{
+    -fx-alignment: center;
+    -fx-padding: 0 0 20px 0;
+}
+.input TextField, .input PasswordField{
+    -fx-background-color: #2DA8D8;
+    -fx-pref-width: 260px;
+    -fx-pref-height: 50px;
+    -fx-min-width: 260px;
+    -fx-min-height: 50px;
+    -fx-max-width: 260px;
+    -fx-max-height: 50px;
+    -fx-font-size: 20px;
+}
+
+.button{
+    -fx-alignment: center;
+    -fx-background-radius: 0px 0px 30px 30px;
+    -fx-background-color: #2A2B2D;
+    -fx-padding: 0 0 30px 0;
+}
+
+.button Button{
+
+    -fx-pref-width: 200px;
+    -fx-pref-height: 50px;
+    -fx-min-width: 200px;
+    -fx-min-height: 50px;
+    -fx-max-width: 200px;
+    -fx-max-height: 50px;
+
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+    -fx-background-color: #2DA8D8;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}

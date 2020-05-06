@@ -1,0 +1,373 @@
+#header{
+    -fx-background-color: #2A2B2D;
+    -fx-min-width: 820px;
+    -fx-max-width: 820px;
+    -fx-pref-width: 820px;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+    -fx-pref-height: 50px;
+}
+
+#header #searchBox{
+    -fx-background-color: #2A2B2D;
+    -fx-min-width: 270px;
+    -fx-max-width: 270px;
+    -fx-pref-width: 270px;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+    -fx-pref-height: 50px;
+    -fx-alignment: center;
+    -fx-spacing: 5px;
+    -fx-padding: 0 0 0 5px;
+}
+
+#header #searchBox TextField{
+    -fx-background-color: #2da8d8;
+    -fx-min-width: 220px;
+    -fx-max-width: 220px;
+    -fx-pref-width: 220px;
+    -fx-min-height: 40px;
+    -fx-max-height: 40px;
+    -fx-pref-height: 40px;
+
+    -fx-font-size: 18px;
+    -fx-text-fill: #fff;
+    -fx-prompt-text-fill: #fff;
+}
+
+#header #searchBox Button{
+    -fx-background-color: #2da8d8;
+    -fx-background-image: url("./img/search.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 70% 70%;
+    -fx-background-position: center center;
+    -fx-background-radius: 5px;
+    -fx-min-width: 40px;
+    -fx-max-width: 40px;
+    -fx-pref-width: 40px;
+    -fx-min-height: 40px;
+    -fx-max-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-cursor: hand;
+}
+
+#header #searchBox Button:hover{
+    -fx-background-color: #fff;
+    -fx-background-image: url("./img/searchBlue.png");
+}
+
+#header #addBtnBox{
+    -fx-alignment: center-left;
+    -fx-padding: 0 0 0 10px;
+    -fx-spacing: 30px;
+}
+
+#header #addBtnBox #addBtn{
+    -fx-min-width: 120px;
+    -fx-max-width: 120px;
+    -fx-pref-width: 120px;
+    -fx-min-height: 40px;
+    -fx-max-height: 40px;
+    -fx-pref-height: 40px;
+
+    -fx-background-color: #2da8d8;
+    -fx-background-radius: 0;
+
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-padding: 0;
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+    -fx-font-weight: 800;
+}
+
+#header #addBtnBox #addBtn:hover{
+    -fx-text-fill: #2da8d8;
+    -fx-background-color: #fff;
+}
+
+#header #addBtnBox #refreshBtn{
+    -fx-background-color: #2da8d8;
+    -fx-background-image: url("./img/refresh.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 70% 70%;
+    -fx-background-position: center center;
+    -fx-background-radius: 5px;
+    -fx-min-width: 40px;
+    -fx-max-width: 40px;
+    -fx-pref-width: 40px;
+    -fx-min-height: 40px;
+    -fx-max-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-cursor: hand;
+}
+
+#header #addBtnBox #refreshBtn:hover{
+    -fx-background-color: #fff;
+    -fx-background-image: url("./img/refreshBlue.png");
+}
+
+#header #nameBox{
+    -fx-padding: 0 30px 0 0;
+    -fx-alignment: center-right;
+}
+
+#header #nameBox #name{
+    -fx-text-fill: #2da8d8;
+    -fx-font-size: 25px;
+}
+
+#listScrollPane{
+    -fx-background-color: #2DA8D8;
+    -fx-background: #2DA8D8;
+    -fx-border-width: 0;
+}
+
+#list{
+    -fx-background-color: #2DA8D8;
+}
+
+#main{
+    -fx-background-color: #d9514e;
+    -fx-alignment: center;
+}
+
+.accountBox{
+    -fx-background-color: #2A2B2D;
+    -fx-border-style: solid;
+    -fx-border-color: #2DA8D8;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.accountBox:hover{
+    -fx-background-color: #d9514e;
+}
+
+.accountBox .imageBox{
+    -fx-alignment: center;
+    -fx-min-width: 55px;
+    -fx-max-width: 55px;
+    -fx-pref-width: 55px;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+    -fx-pref-height: 50px;
+}
+
+.accountBox .imageBox Label{
+    -fx-background-color: #2da8d8;
+    -fx-background-radius: 50%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-shape:"M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0";
+    -fx-border-radius: 50%;
+    -fx-max-width: 35px;
+    -fx-pref-width: 35px;
+    -fx-min-width: 35px;
+    -fx-max-height: 35px;
+    -fx-pref-height: 35px;
+    -fx-min-height: 35px;
+
+    -fx-font-size: 20px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #fff;
+    -fx-alignment: center;
+}
+
+.accountBox .labelBox{
+    -fx-alignment: center;
+    -fx-min-width: 125px;
+    -fx-max-width: 125px;
+    -fx-pref-width: 125px;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+    -fx-pref-height: 50px;
+}
+
+.accountBox .labelBox Label{
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+    -fx-font-weight: 700;
+}
+
+.accountBox .accBtnsBox{
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+    -fx-min-width: 70px;
+    -fx-max-width: 70px;
+    -fx-pref-width: 70px;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+    -fx-pref-height: 50px;
+}
+
+.accountBox .accBtnsBox .copyBtn{
+    -fx-background-color: #2da8d8;
+    -fx-background-image: url("./img/copy.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 70% 70%;
+    -fx-background-position: center center;
+    -fx-background-radius: 5px;
+    -fx-min-width: 24px;
+    -fx-max-width: 24px;
+    -fx-pref-width: 24px;
+    -fx-min-height: 24px;
+    -fx-max-height: 24px;
+    -fx-pref-height: 24px;
+    -fx-cursor: hand;
+}
+
+.accountBox .accBtnsBox .editBtn{
+    -fx-background-color: #2da8d8;
+    -fx-background-image: url("./img/edit.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 70% 70%;
+    -fx-background-position: center center;
+    -fx-background-radius: 5px;
+    -fx-min-width: 24px;
+    -fx-max-width: 24px;
+    -fx-pref-width: 24px;
+    -fx-min-height: 24px;
+    -fx-max-height: 24px;
+    -fx-pref-height: 24px;
+    -fx-cursor: hand;
+
+}
+
+.accountBox .accBtnsBox .editBtn:hover{
+    -fx-background-color: #fff;
+    -fx-background-image: url("./img/editBlue.png");
+}
+
+.accountBox .accBtnsBox .copyBtn:hover{
+    -fx-background-color: #fff;
+    -fx-background-image: url("./img/copyBlue.png");
+}
+
+.selected{
+    -fx-background-color: #d9514e;
+}
+
+#titleBox{
+    -fx-min-width: 100%;
+    -fx-max-width: 100%;
+    -fx-pref-width: 100%;
+    -fx-min-height: 180px;
+    -fx-max-height: 180px;
+    -fx-pref-height: 180px;
+    -fx-alignment: center;
+}
+
+#titleBox #image{
+    -fx-min-width: 100px;
+    -fx-max-width: 100px;
+    -fx-pref-width: 100px;
+    -fx-min-height: 100px;
+    -fx-max-height: 100px;
+    -fx-pref-height: 100px;
+    -fx-background-color: #2da8d8;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-radius: 50%;
+    -fx-shape:"M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0";
+    -fx-border-radius: 50%;
+    -fx-alignment: center;
+    -fx-font-size: 40px;
+    -fx-font-weight: 600;
+    -fx-text-fill: white;
+}
+
+#titleBox #label{
+    -fx-min-width: 200px;
+    -fx-max-width: 200px;
+    -fx-pref-width: 200px;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+    -fx-pref-height: 50px;
+
+    -fx-alignment: center;
+    -fx-font-size: 25px;
+    -fx-font-weight: 700;
+    -fx-text-fill: white;
+}
+
+#editBox{
+    -fx-background-color: #2A2B2D;
+    -fx-min-width: 550px;
+    -fx-max-width: 550px;
+    -fx-pref-width: 550px;
+    -fx-min-height: 470px;
+    -fx-max-height: 470px;
+    -fx-pref-height: 470px;
+    -fx-padding: 15px 0px 0px 0px;
+}
+
+.inputLabel{
+    -fx-alignment: center;
+}
+
+.inputLabel Label{
+    -fx-text-fill: #fff;
+    -fx-font-size: 17px;
+    -fx-min-width: 300px;
+    -fx-max-width: 300px;
+    -fx-pref-width: 300px;
+    -fx-text-alignment: left;
+}
+
+.input{
+    -fx-alignment: center;
+    -fx-padding: 0 0 10px 0;
+}
+.input TextField, .input PasswordField{
+    -fx-background-color: #2DA8D8;
+    -fx-pref-width: 300px;
+    -fx-min-width: 300px;
+    -fx-max-width: 300px;
+    -fx-pref-height: 30px;
+    -fx-min-height: 30px;
+    -fx-max-height: 30px;
+
+    -fx-font-size: 18px;
+    -fx-text-fill: #fff;
+}
+
+.button{
+    -fx-alignment: center;
+    -fx-background-radius: 0px 0px 30px 30px;
+    -fx-background-color: #2A2B2D;
+    -fx-padding: 10px 0 30px 0;
+    -fx-spacing: 70px;
+}
+
+.button Button{
+
+    -fx-pref-width: 100px;
+    -fx-min-width: 100px;
+    -fx-max-width: 100px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 10px;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+}
+
+#deleteBtn{
+    -fx-background-color: #d9514e;
+}
+
+#deleteBtn:hover{
+    -fx-background-color: #fff;
+    -fx-text-fill: #d9514e;
+}
+
+#saveBtn{
+    -fx-background-color: #2DA8D8;
+}
+#saveBtn:hover{
+    -fx-background-color: #fff;
+    -fx-text-fill: #2DA8D8;
+}
