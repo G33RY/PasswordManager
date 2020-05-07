@@ -33,7 +33,7 @@ The communication between the client and the server works with request keywords.
 
 **Algorithm:** AES
 
-The encrypted data from the client is encrypted with the secret key linked to the client's mac address. 
+The encrypted data from the client is encrypted with the secret key linked to the client's mac address.\
 The encrypted data in the database is encrypted with the secret key in the user's row.
 
 ![GRAPH](https://i.imgur.com/ut1kcnK.png)
