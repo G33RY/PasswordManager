@@ -36,19 +36,4 @@ The communication between the client and the server works with request keywords.
 The encrypted data from the client is encrypted with the secret key linked to the client's mac address. 
 The encrypted data in the database is encrypted with the secret key in the user's row.
 
-###
-```mermaid
-sequenceDiagram
-CLIENT ->> SERVER: macAddress, encrypted data
-Note left of SERVER: Server decrypt data <br/> with the key linked  to <br/> client's mac address
-SERVER ->> DATABASE: find user's row
-DATABASE ->> SERVER: user's row
-Note right of SERVER: Server encrypt data <br/> with the key from the<br/>user's row
-SERVER ->> DATABASE: insert encrypted data
-
-SERVER ->> DATABASE: find user's row
-DATABASE ->> SERVER: user's row
-Note right of SERVER: Server decrypt data <br/> with the key from the<br/>user's row
-SERVER ->> CLIENT: Encrypted data
-Note left of SERVER: Server encrypt data <br/> with the key linked  to <br/> client's mac address
-```
+![GRAPH](https://i.imgur.com/ut1kcnK.png)
