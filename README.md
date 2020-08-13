@@ -1,4 +1,4 @@
-# Password Manager
+# Password Manager (Java)
 Password Manager developed in Java with the Maven framework.
 The desktop client communicating with the server with Java sockets.
 
